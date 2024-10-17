@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pemesanan Barang</title>
+  <style>
+    .tab1 {
+      padding-left: 100px;
+    }
+
+    #submit-button {
+      color: white;
+      background-color: green;
+    }
+
+    #no_phone {
+      color: limegreen;
+      accent-color: green;
+    }
+
+    #email {
+      color: limegreen;
+      accent-color: green;
+    }
+
+    .tab2 {
+      padding-left: 183px;
+    }
+    .tab3 {
+      padding-left: 95px;
+    }
+    .tab4 {
+      padding-left: 82px;
+    }
+    .tab5 {
+      padding-left: 129px;
+    }
+    .tab6 {
+      padding-left: 59px;
+    }
+    .tab7 {
+      padding-left: 67px;
+    }
+    .tab8 {
+      padding-left: 28px;
+    }
+    .tab9 {
+      padding-left: 80px;
+    }
+    .tab10{
+      padding-left: 180px;
+    }
+    .tab11{
+      padding-left: 78px;
+    }
+
+
+    
+  </style>
+</head>
+
+<body>
+  <fieldset>
+    <div>
+      <nav style="display: flex; justify-content: space-between">
+        <a href="#">Home</a> | <a href="#">Generate Link</a> |
+        <a href="#">Transaction History</a> | <a href="#">Policy</a> |
+        <a href="#">Logout</a>
+      </nav>
+    </div>
+  </fieldset>
+  <br />
+  <form>
+    <div style="display: flex">
+      <div style="justify-content: space space-between; margin: 100px;">
+        <input type="file" name="photo">
+      </div>
+      <br />
+
+      <div style="margin: 50px 70px 0px 150px; width: 100">
+        <label for="name;">Tittle Here</label>
+        <span class="tab1">:</span>
+        <label for="">MacBook Air £800</label>
+
+        <div style="margin: 50px 70px 0px 0px; width: 100">
+          <label for="Description;">Description </label>
+          <span class="tab3">:</span>
+          <label for="">Year : 2009</label>
+          <br>
+          <label for=""class="tab2">Model : </label>
+          <br>
+          <label for="" class="tab2">Condition : Mint</label>
+        </div>
+        <br>
+        <div>
+          <label for="" >Total Amount</label>
+          <span class="tab4">:</span>
+          <label for="" >£800</label>
+        </div>
+        <br>
+        <div>
+          <label for="">Pay to</label>
+          <span class="tab5">:</span>
+          <label for="">123-456-789-0</label>
+        </div>
+        <br>
+          <label for="payment-type">Payment Type</label>
+          <span class="tab11">:</span>
+          <select name="payment-type" id="payment-type">
+            <option value="Visa Debit">Visa Debit</option>
+            <option value="E-walet">E-walet</option>
+            <option value="Mobile Bangking">Mobile Bangking</option>
+          </select>
+          <br><br>
+        <div>
+          <label for="name;">Account Holder </label>
+          <span class="tab7">:</span>
+          <input type="text" name="Account Holder" id="Account Holder" value="Name Here" />
+        </div>
+        <br>
+        <div>
+          <label for="name;">Account Number</label>
+          <span class="tab6">:</span>
+          <input type="text" name="accountNumber" id="accountNumber" value="123-456-789-0" />
+        </div>
+        <span class="tab10"></span>
+        <input type="checkbox" name="no phone" id="no_phone">
+        <label for="nophone" id="no_phone">Send to Mobile Phone</label>
+        <br>
+        <span class="tab10"></span>
+        <input type="checkbox" name="email" id="email" >
+        <label for="nophone" id="email">Send to Email</label>
+        <br>
+        <label for="name">Send to Mobile Phone</label>
+        <span class="tab8">:</span>
+        <input type="text" name="send to mobile phone" id="sed to mobile phone" value="1234567890,1234567891">
+        <br><br>
+        <label for="name"> Send to Email</label>
+        <span class="tab9">:</span>
+        <input type="text" name="send to email" id="send to email" value="mfmm2g13@soton.ac.uk,fya_06@yahoo.com">
+        <br><br>
+        <input type="submit" name="submit-button" id="submit-button" value="Pay using Quidlink" />
+
+      </div>
+    </div>
+    </div>
+  </form>
+</body>
+
+</html>

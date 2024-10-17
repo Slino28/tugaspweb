@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pemesanan Barang</title>
+    <style>
+      #submit-button {
+      color: white;
+      background-color: green;
+    }
+
+    #no_phone {
+      color: limegreen;
+      accent-color: green;
+    }
+
+    #email {
+      color: limegreen;
+      accent-color: green;
+    }
+
+    .tab1{
+      padding-left: 80px;
+    }
+    .tab2{
+      padding-left: 73px;
+    }
+    .tab3{
+      padding-left: 37px;
+    }
+    .tab4{
+      padding-left: 114px;
+    }
+    .tab5{
+      padding-left: 45px;
+    }
+    .tab6{
+      padding-left: 73px;
+    }
+    .tab7{
+      padding-left: 6px;
+    }
+    .tab8{
+      padding-left: 58px;
+    }
+    .tab9{
+      padding-left: 160px;
+    }
+    .tab10{
+      padding-left: 160px;
+    }
+    </style>
+  </head>
+  <body>
+    <fieldset>
+      <div>
+        <nav style="display: flex; justify-content: space-between">
+          <a href="#">Home</a> | <a href="#">Generate Link</a> |
+          <a href="#">Transaction History</a> | <a href="#">Policy</a> |
+          <a href="#">Logout</a>
+        </nav>
+      </div>
+    </fieldset>
+    <br />
+    <form action="webpemesanan2.html" method="get">
+      <div style="display: flex">
+        <div style="justify-content: space space-between; margin: 100px;">
+          <input type="file" name="photo">
+        </div>
+          <br />
+
+          <div style="margin: 50px 70px 0px 150px; width: 100">
+            <label for="name;">Tittle Here</label>
+            <span class="tab1">:</span>
+            <input
+              type="text"
+              name="Tittle Here:"
+              id="Tittle Here"
+              value="MacBook Air £800"
+            />
+            <div style="margin: 50px 70px 0px 0px; width: 100">
+              <label for="Description;">Description</label>
+              <span class="tab2">:</span>
+              <textarea
+                name="Description"
+                id="Description"
+                maxlength="400"
+                placeholder="No more than 400 character"
+              >Year : 2009
+              Model :
+              Condition : Mint
+              </textarea>
+            </div>
+            <br>
+            <br>
+            <div>
+              <label for="name;">Account Number</label>
+              <span class="tab3">:</span>
+            <input
+              type="text"
+              name="accountNumber"
+              id="accountNumber"
+              value="123-456-789-0"
+            />
+            </div>
+            <br>
+            <div>
+              <label for="name;">Bank</label>
+              <span class="tab4">:</span>
+            <input
+              type="text"
+              name="Bank"
+              id="Bank"
+              value="HSBC"
+            />
+            </div>
+            <br>
+            <div>
+              <label for="name;">Account Holder</label>
+              <span class="tab5">:</span>
+            <input
+              type="text"
+              name="Account Holder"
+              id="Account Holder"
+              value="Name Here"
+            />
+            </div>
+            <br>
+            <label for="">Transaction</label>
+            <span class="tab6">:</span>
+      <input type="number" name="count" id="count" min="1" max="3" />
+            <br>
+            <label for="" class="tab9">*if the transaction is for 3 person,choose 3 person from the drom-down list</label>
+            <br>
+            <span class="tab10"></span>
+            <input type="checkbox" name="no phone" id="no_phone" >
+            <label for="nophone" id="no_phone">Send to Mobile Phone</label>
+            <br>
+            <span class="tab10"></span>
+            <input type="checkbox" name="email" id="email">
+            <label for="nophone" id="email">Send to Email</label>
+            <br>
+            <label for="name">Send to Mobile Phone</label>
+            <span class="tab7">:</span>
+            <input type="text" name="send to mobile phone" id="sed to mobile phone" value="1234567890,1234567891">
+              <br><br>
+              <label for="name"> Send to Email</label>
+              <span class="tab8">:</span>
+              <input type="text" name="send to email" id="send to email" value="mfmm2g13@soton.ac.uk,fya_06@yahoo.com">
+              <br><br \>
+              <input
+        type="submit"
+        name="submit-button"
+        id="submit-button"
+        value="Generate Nobr Link"/>
+
+          </div>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
